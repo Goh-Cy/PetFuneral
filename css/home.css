@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+.slideshow-container {
+	position: relative;
+}
+
+.mySlides img {
+	width: 100%;
+	height: 750px;
+	object-fit: cover;
+	filter: brightness(50%);
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 30px;
+	position: absolute;
+	bottom: 60%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	text-align: center;
+}
+.text h4 {
+	font-size: 40px;
+}
+
+.fadeToNext {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.dot {
+	pointer-events: none;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.dot.active {
+	background-color: #666;
+}
+
+.container {
+	display: flex;
+	padding: 100px 0;
+	width: auto;
+}
+
+.link {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #790ff7;
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.service_home, .petm-text {
+	width: 40%;
+	padding: 20px;
+}
+
+.service_home {
+	margin-left: 250px;
+}
+
+.petm-text {
+	margin-right: 250px;
+}
+
+.service_home h2, 
+.petm-text h2 {
+	font-size: 40px;
+}
+.service_home h4, 
+.petm-text h4 {
+	font-size: 30px;
+}
+.service_home p, 
+.petm-text p {
+	font-size: 26px;
+	text-align: justify;
+}
+
+.pet-image {
+	height: 325px;
+	width: 30%;
+	border: 1px solid;
+	padding: 5px 50px;
+	overflow: hidden;
+}
+.pet-image img {
+	width: 90%;
+	height: 90%;
+	margin: 17px 20px 0;
+}
+
+.pet-image.pet_sleep {
+	border-radius: 0% 100% 100% 0%;
+	margin: 80px 250px 0px 50px;
+}
+.pet_sleep img {
+	border-radius: 0% 100% 100% 0%;
+}
+
+.pet-image.pet-memo {
+	border-radius: 100% 0% 0% 100%;
+	margin: 80px 50px 0px 250px;
+}
+.pet-memo img {
+	border-radius: 100% 0% 0% 100%;
+}
