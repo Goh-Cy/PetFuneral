@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbW1mXdYDL6y_ILp2NPqPJ4fcW3qj-M3U&callback=initMap" async defer></script>
+    <script src="" async defer></script>
 </head>
 <body>
 <?php include('includes/navheader.php'); ?>
