@@ -6,7 +6,36 @@
     <link href="css/prod-list.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="btn()">
-{% include navheader.html %}
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+<div class="nav-div">
+    <div class="navbar">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li class="align-li nav-btn" ><a href="home.html" >Home</a></li>
+                <li class="align-li nav-btn" ><a href="products.html" >Products</a></li>
+                <li class="align-li nav-btn" ><a href="gallery.html" >Gallery</a></li>
+                <li class="align-li nav-btn" ><a href="about.html" >About Us</a></li>
+                <li class="align-li nav-btn" ><a href="contact.html" >Contact Us</a></li>
+                <li class="align-li nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/user.png" style="width: 40px; height: 40px">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li class="dropdown-li"><a class="dropdown-item" href="cart.html">Cart</a></li>
+                    <li class="dropdown-li"><a class="dropdown-item" href="home.html">Log out</a></li>
+                  </ul>
+                </li>
+                } <li class="align-li nav-btn"><a href="login.html">Log in</a></li>';
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
     <div class="list-wrapper">
         <div class="services-list">
             <div class="div-header-container">
