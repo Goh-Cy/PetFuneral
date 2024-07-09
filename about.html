@@ -5,7 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="" async defer></script>
+    <script>
+        require('dotenv').config();
+        console.log(process.env);
+        const api_key = process.env.api;
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=${api}&callback=initMap" async defer></script>
 </head>
 <body>
 <link href="css/style.css" rel="stylesheet" type="text/css">
