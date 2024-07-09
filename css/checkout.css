@@ -1,0 +1,290 @@
+*{
+    border-width: 0;
+    border-style: solid;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(194,178,152,0.11);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkout-hd{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.left-hd{
+    width: 47px;
+}
+
+.splitter{
+    width: 1px;
+    height: 35px;
+    background-color: grey;
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+
+.right-hd{
+    width: 90%;
+}
+
+.return{
+    margin-left: 20px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.left-wrapper{
+    width: 35%;
+    margin-right: 5%;
+}
+
+.right-wrapper{
+    width: 35%;
+    margin-left: 5%;
+}
+
+.bill{
+    background-color: rgba(100,86,81,0.23);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.summary-hd{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.details{
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.methods{
+    position: relative;
+}
+
+.justify-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-total{
+    margin-top: 20px;
+}
+
+.boxed{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100%;
+}
+
+.methods a:active .boxed{
+    border-color: blue;
+}
+
+.montserrat-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.montserrat-etc{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.float{
+    left: 10px;
+    padding: 15px 5px 0 10px;
+}
+
+.align{
+    padding-top: 45px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+input[type="checkbox"]:hover{
+    transform: scale(1.05);
+}
+
+input[type="checkbox"]:checked{
+    border: 3px solid #478bfb;
+}
+
+input[type="checkbox"]:checked:after{
+    background-color: #478bfb;
+}
+
+.cart-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.cart-header th {
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-header th.total {
+    text-align: right;
+}
+
+.cart-header th.qty{
+    text-align: center;
+}
+
+.ttl-price h2 {
+    text-align: right;
+    margin: 0;
+}
+
+.cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cart-item h3{
+    margin-left: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-summary-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.price-tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item-qty {
+    display: flex;
+    align-items: center;
+}
+
+.price-btn {
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+}
+
+.minus-btn {
+    margin-right: 10px; /* Space between the minus button and the price */
+}
+
+.plus-btn {
+    margin-left: 10px; /* Space between the plus button and the price */
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.pay-btn-wrapper {
+}
+
+.pay-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #422800;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: #5d3a00;
+}
+
+.montserrat-smhd {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+

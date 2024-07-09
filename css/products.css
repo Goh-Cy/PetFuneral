@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.contact-wrapper-background{
+    display: block;
+    background-image: url("https://i.pinimg.com/564x/ea/cf/f1/eacff178c63a70fea25609dd1154af34.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+.contact-content h1{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.contact-content h3{
+    font: 1em sans-serif;
+    font-size: 20px;
+}
+
+.contact-btn{
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+}
+
+.contact-btn:active{
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+.overlay{
+    position: relative;
+}
+
+.overlay::after{
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-content{
+    z-index: 15;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services-wrapper{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.services-container-icons{
+    padding: 10px auto;
+    margin: 10px auto;
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    display: flex;
+    flex-direction: column;
+
+    transition: transform .2s;
+}
+
+.services-container-icons:hover{
+    transform: scale(1.2);
+
+}
+.our-services h1{
+    margin-top: 100px;
+}
+
+.wordings{
+    padding-bottom: 2rem;
+}
+
+.learnMore-btn{
+    background: #422800;
+    border-radius: 999px;
+    box-shadow: #422800 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    text-decoration: none;
+
+}
+
+.columbarium-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.with-border{
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.columbarium-bg {
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: calc(50%-20px);
+}
+
+.columbarium-bg img{
+    max-width: 100%;
+    width: auto;
+    height: 800px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+.title-description{
+    max-width: 50%;
+    padding: 20px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.title-description h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.title-description p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.packages-wrapper{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.left{
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 80px;
+}
+
+.right{
+    width: 40%;
+    margin-top: 9% ;
+}
+
+.right .with-border{
+    padding: 0;
+    margin-right: 30%;
+    border-radius: 0 1000px 1000px 0;
+}
+
+.package-price{
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+.from{
+    margin-left: -30px;
+    margin-bottom: 5px;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e4f52;
+}
+
+.price{
+    font-size: 60px;
+    margin-left: 10px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.currency{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    color: #686c75;
+    font-weight: bold;
+
+}
+
+.packages-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 90%;
+}
+
+.packages-choices{
+    width: 30%;
+    position: relative;
+    min-height: 1px;
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-radius: 1rem;
+}
+
+.packages-container img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: -20%;
+}
+
+.item{
+    margin: 20px auto;        
+}
+
+.li-item:not(:last-child) .item{
+    border-bottom: 1px solid #d0d3d9;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.item i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.item  i.fa-times-circle{
+    color: red;
+}
+
+.package-details ul{
+    list-style-type: none;
+    display: table;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 20px;
+}
+
+.package-extra ul{
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.package-extra ul p{
+    font-size: 14px;
+}
+
+.package-type{
+    background-color: #777877;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.package-type h3,p{
+    margin: 5px;
+    padding: 0;
+}
+
+
+.white-bg{
+    background-color: white;
+    border-radius: inherit;
+}
+
+.package-learn-more{
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services-container-icons {
+        width: 50%; 
+    }
+
+    .our-services h1 {
+        margin-top: 50px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .services-container-icons {
+        width: 100%; 
+    }
+
+    .our-services h1 {
+        margin-top: 30px; 
+    }
+}
