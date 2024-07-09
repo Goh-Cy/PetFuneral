@@ -7,7 +7,36 @@
     <link href="css/packages.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-{% include navheader.html %}
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+<div class="nav-div">
+    <div class="navbar">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <nav>
+            <ul>
+                <li class="align-li nav-btn" ><a href="home.html" >Home</a></li>
+                <li class="align-li nav-btn" ><a href="products.html" >Products</a></li>
+                <li class="align-li nav-btn" ><a href="gallery.html" >Gallery</a></li>
+                <li class="align-li nav-btn" ><a href="about.html" >About Us</a></li>
+                <li class="align-li nav-btn" ><a href="contact.html" >Contact Us</a></li>
+                <li class="align-li nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/user.png" style="width: 40px; height: 40px">
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li class="dropdown-li"><a class="dropdown-item" href="cart.html">Cart</a></li>
+                    <li class="dropdown-li"><a class="dropdown-item" href="home.html">Log out</a></li>
+                  </ul>
+                </li>
+                } <li class="align-li nav-btn"><a href="login.html">Log in</a></li>';
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
     <div class="product-wrapper">
         <div class="img-slide">
             <div class="slideshow-container">
@@ -222,6 +251,57 @@
 
     }
 </script>
-{% include footer.html %}
+<!DOCTYPE html>
+<link href="css\footer.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+<footer>
+        <div class="footer">
+            <div class= "footer-content">
+                <div class="footer-left">
+                    <h3>About us</h3>
+                    <p>PetFuneral offers a dignified and custom services for your beloved pets before returning them homoe as ashes.
+                    We know they are our best "hello" and our worst "goodbye", hence we will be there every step of the way.</p>
+                </div>
+
+                <div class="footer-center">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="products.html"><li>Products</li></a>
+                        <a href="gallery.html"><li>Gallery</li></a>
+                        <a href="contact.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-right">
+                    <h3>Get in touch</h3>
+                    <div>
+                        <i class="fas fa-phone-alt"> </i>
+                        <span class="phone">+6012-345 6789</span>
+                        <span></span>
+                        <span class="phone">/ +6016-234 5678</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="location">10, Jln. Dayang 11/8, Bdr. Mahkota Cheras, 43200 Cheras, Selangor</span>
+                    </div>
+                    <div>
+                        <i class="fas fas fa-clock"></i>
+                        <span class="clock">Office hour (Mon-Sun 7:00AM - 6:00PM)</span>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
 </body>
 </html>
